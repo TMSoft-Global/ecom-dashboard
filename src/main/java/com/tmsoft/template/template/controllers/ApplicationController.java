@@ -62,4 +62,14 @@ public class ApplicationController {
     public String salesOrderDetails() {
         return "/sales/page-order-details";
     }
+
+    @GetMapping("/customer/listings")
+    public String salesCustomerListings() {
+        return "/customers/page-customer-listings";
+    }
+
+    @GetMapping("/customer/details")
+    public String salesCustomerDetails() {
+        return "/customers/page-customer-details";
+    }
 }
