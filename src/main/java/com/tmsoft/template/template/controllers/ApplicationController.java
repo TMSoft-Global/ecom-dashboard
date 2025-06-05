@@ -42,4 +42,24 @@ public class ApplicationController {
     public String catalogEditCategory() {
         return "/catalog/page-edit-category";
     }
+
+    @GetMapping("/sales/order-listings")
+    public String salesOrderLisings() {
+        return "/sales/page-order-listings";
+    }
+
+    @GetMapping("/sales/add-order")
+    public String salesAddOrder() {
+        return "/sales/page-add-order";
+    }
+
+    @GetMapping("/sales/edit-order")
+    public String salesEditOrder() {
+        return "/sales/page-edit-order";
+    }
+
+    @GetMapping("/sales/order-details")
+    public String salesOrderDetails() {
+        return "/sales/page-order-details";
+    }
 }
