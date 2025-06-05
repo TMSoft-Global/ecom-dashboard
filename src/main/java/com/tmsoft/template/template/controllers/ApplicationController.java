@@ -64,12 +64,37 @@ public class ApplicationController {
     }
 
     @GetMapping("/customer/listings")
-    public String salesCustomerListings() {
+    public String customerListings() {
         return "/customers/page-customer-listings";
     }
 
     @GetMapping("/customer/details")
-    public String salesCustomerDetails() {
+    public String customerDetails() {
         return "/customers/page-customer-details";
+    }
+
+    @GetMapping("/reports/product-view")
+    public String reportProductView() {
+        return "/reports/page-product-view";
+    }
+
+    @GetMapping("/reports/sales")
+    public String reportSales() {
+        return "/reports/page-sales";
+    }
+
+    @GetMapping("/reports/returns")
+    public String reportReturns() {
+        return "/reports/page-returns";
+    }
+
+    @GetMapping("/reports/customer-orders")
+    public String reportCustomerOrders() {
+        return "/reports/page-customer-orders";
+    }
+
+    @GetMapping("/reports/shipping")
+    public String reportShipping() {
+        return "/reports/page-shipping";
     }
 }

@@ -101,7 +101,7 @@
 					<!--end::Sidebar mobile toggle-->
 					<!--begin::Mobile logo-->
 					<div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
-						<a href="../../demo1/dist/index.html" class="d-lg-none">
+						<a th:href="@{/}" class="d-lg-none">
 							<img alt="Logo" src="/admin/assets/media/logos/default-small.svg" class="h-30px" />
 						</a>
 					</div>
@@ -1223,7 +1223,7 @@
 					<!--begin::Logo-->
 					<div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
 						<!--begin::Logo image-->
-						<a href="../../demo1/dist/index.html">
+						<a th:href="@{/}">
 							<img alt="Logo" src="/admin/assets/media/logos/default-dark.svg"
 								class="h-25px app-sidebar-logo-default" />
 							<img alt="Logo" src="/admin/assets/media/logos/default-small.svg"
@@ -1451,7 +1451,7 @@
 												<div class="menu-item">
 													<!--begin:Menu link-->
 													<a class="menu-link"
-														href="../../demo1/dist/apps/ecommerce/reports/view.html">
+														th:href="@{/reports/product-view}">
 														<span class="menu-bullet">
 															<span class="bullet bullet-dot"></span>
 														</span>
@@ -1464,7 +1464,7 @@
 												<div class="menu-item">
 													<!--begin:Menu link-->
 													<a class="menu-link"
-														href="../../demo1/dist/apps/ecommerce/reports/sales.html">
+														th:href="@{/reports/sales}">
 														<span class="menu-bullet">
 															<span class="bullet bullet-dot"></span>
 														</span>
@@ -1477,7 +1477,7 @@
 												<div class="menu-item">
 													<!--begin:Menu link-->
 													<a class="menu-link"
-														href="../../demo1/dist/apps/ecommerce/reports/returns.html">
+														th:href="@{/reports/returns}">
 														<span class="menu-bullet">
 															<span class="bullet bullet-dot"></span>
 														</span>
@@ -1490,7 +1490,7 @@
 												<div class="menu-item">
 													<!--begin:Menu link-->
 													<a class="menu-link"
-														href="../../demo1/dist/apps/ecommerce/reports/customer-orders.html">
+														th:href="@{/reports/customer-orders}">
 														<span class="menu-bullet">
 															<span class="bullet bullet-dot"></span>
 														</span>
@@ -1503,7 +1503,7 @@
 												<div class="menu-item">
 													<!--begin:Menu link-->
 													<a class="menu-link"
-														href="../../demo1/dist/apps/ecommerce/reports/shipping.html">
+														th:href="@{/reports/shipping}">
 														<span class="menu-bullet">
 															<span class="bullet bullet-dot"></span>
 														</span>
@@ -2030,7 +2030,7 @@
 																		<div
 																			class="symbol symbol-circle symbol-25px overflow-hidden me-3">
 																			<a
-																				href="../../demo1/dist/apps/ecommerce/customers/details.html">
+																				th:href="@{/customer/details}">
 																				<div class="symbol-label">
 																					<img src="/admin/assets/media/avatars/300-23.jpg"
 																						alt="Dan Wilson"
@@ -2040,7 +2040,7 @@
 																		</div>
 																		<!--end::Avatar-->
 																		<!--begin::Name-->
-																		<a href="../../demo1/dist/apps/ecommerce/customers/details.html"
+																		<a th:href="@{/customer/details}"
 																			class="text-gray-600 text-hover-primary">Dan
 																			Wilson</a>
 																		<!--end::Name-->
@@ -2314,7 +2314,7 @@
 																		<td>
 																			<div class="d-flex align-items-center">
 																				<!--begin::Thumbnail-->
-																				<a href="../../demo1/dist/apps/ecommerce/catalog/edit-product.html"
+																				<a th:href="@{/catalog/edit-product}"
 																					class="symbol symbol-50px">
 																					<span class="symbol-label"
 																						style="background-image:url(assets/media//stock/ecommerce/1.gif);"></span>
@@ -2322,7 +2322,7 @@
 																				<!--end::Thumbnail-->
 																				<!--begin::Title-->
 																				<div class="ms-5">
-																					<a href="../../demo1/dist/apps/ecommerce/catalog/edit-product.html"
+																					<a th:href="@{/catalog/edit-product}"
 																						class="fw-bold text-gray-600 text-hover-primary">Product
 																						1</a>
 																					<div class="fs-7 text-muted">
@@ -2350,7 +2350,7 @@
 																		<td>
 																			<div class="d-flex align-items-center">
 																				<!--begin::Thumbnail-->
-																				<a href="../../demo1/dist/apps/ecommerce/catalog/edit-product.html"
+																				<a th:href="@{/catalog/edit-product}"
 																					class="symbol symbol-50px">
 																					<span class="symbol-label"
 																						style="background-image:url(assets/media//stock/ecommerce/100.gif);"></span>
@@ -2358,7 +2358,7 @@
 																				<!--end::Thumbnail-->
 																				<!--begin::Title-->
 																				<div class="ms-5">
-																					<a href="../../demo1/dist/apps/ecommerce/catalog/edit-product.html"
+																					<a th:href="@{/catalog/edit-product}"
 																						class="fw-bold text-gray-600 text-hover-primary">Footwear</a>
 																					<div class="fs-7 text-muted">
 																						Delivery Date: 23/11/2022</div>
