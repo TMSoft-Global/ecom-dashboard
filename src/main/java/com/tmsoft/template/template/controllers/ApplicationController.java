@@ -102,4 +102,14 @@ public class ApplicationController {
     public String ecomSettings() {
         return "/page-ecom-settings";
     }
+
+    @GetMapping("/users/list")
+    public String usersList() {
+        return "/userManagement/page-user-lists";
+    }
+
+    @GetMapping("/users/detail")
+    public String usersDetails() {
+        return "/userManagement/page-user-details";
+    }
 }
