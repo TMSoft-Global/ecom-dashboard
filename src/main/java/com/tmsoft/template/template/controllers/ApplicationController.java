@@ -97,4 +97,9 @@ public class ApplicationController {
     public String reportShipping() {
         return "/reports/page-shipping";
     }
+
+    @GetMapping("/ecom-settings")
+    public String ecomSettings() {
+        return "/page-ecom-settings";
+    }
 }
