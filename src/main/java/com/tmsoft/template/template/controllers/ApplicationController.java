@@ -112,4 +112,19 @@ public class ApplicationController {
     public String usersDetails() {
         return "/userManagement/page-user-details";
     }
+
+    @GetMapping("/login")
+    public String login() {
+        return "/page-login";
+    }
+
+    @GetMapping("/deactivation")
+    public String deactivation() {
+        return "/page-deactivation";
+    }
+
+    @GetMapping("/error-404")
+    public String error() {
+        return "/error-404";
+    }
 }

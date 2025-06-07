@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<!--begin::Head-->
+
+<html lang="en">
+<!--begin::Head-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Site Metas -->
+	<title>Goods & Market Imports - Online Shopping in Ghana</title>
+	<meta name="keywords"
+		content="GMI, online shopping ghana, electronics ghana, fashion ghana, home appliances, phones, tablets, supermarket, online store ghana, best prices ghana">
+	<meta name="description"
+		content="Shop online for electronics, phones, fashion, home appliances and more at Goods & Market Imports (GMI). Best prices in Ghana with fast delivery and secure payment options.">
+	<meta name="author" content="TMSoft">
+
+	<!-- Open Graph / Social Media Meta Tags -->
+	<meta property="og:title" content="Goods & Market Imports - Online Shopping in Ghana">
+	<meta property="og:description"
+		content="Shop online for electronics, phones, fashion, home appliances and more at GMI. Best prices in Ghana with fast delivery.">
+	<meta property="og:image" content="/images/logo.png">
+	<meta property="og:url" content="https://www.gmi.com.gh">
+	<meta property="og:type" content="website">
+
+	<!-- Twitter Card Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Goods & Market Imports">
+	<meta name="twitter:description" content="The Best Online Shopping Site in Ghana">
+	<meta name="twitter:image" content="/images/logo.png">
+
+	<!-- Additional Meta Tags -->
+	<meta name="robots" content="index, follow">
+	<meta name="language" content="English">
+	<meta name="revisit-after" content="7 days">
+	<meta name="geo.region" content="GH">
+	<meta name="geo.placename" content="Ghana">
+
+	<!-- Site Icons -->
+	<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="Goods & Market Imports" />
+	<link rel="manifest" href="/favicon/site.webmanifest" />
+	<meta name="msapplication-TileColor" content="#f68b1e">
+	<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<!--begin::Fonts(mandatory for all pages)-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+	<!--end::Fonts-->
+	<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+	<link th:href="@{/admin/assets/plugins/global/plugins.bundle.css}" rel="stylesheet" type="text/css" />
+	<link th:href="@{/admin/assets/css/style.bundle.css}" rel="stylesheet" type="text/css" />
+	<!--end::Global Stylesheets Bundle-->
+</head>
+<!--end::Head-->
+<!--begin::Body-->
+
+<body id="kt_body" class="app-blank app-blank bgi-size-cover bgi-position-center bgi-no-repeat">
+	<!--begin::Theme mode setup on page load-->
+	<script>var defaultThemeMode = "light"; var themeMode; if (document.documentElement) { if (document.documentElement.hasAttribute("data-theme-mode")) { themeMode = document.documentElement.getAttribute("data-theme-mode"); } else { if (localStorage.getItem("data-theme") !== null) { themeMode = localStorage.getItem("data-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-theme", themeMode); }</script>
+	<!--end::Theme mode setup on page load-->
+	<!--begin::Root-->
+	<div class="d-flex flex-column flex-root" id="kt_app_root">
+		<!--begin::Page bg image-->
+		<style>
+			body {
+				background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('/admin/assets/media/auth/gifty.png');
+				background-size: cover;
+				background-position: top;
+			}
+
+			[data-theme="dark"] body {
+				background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/admin/assets/media/auth/gifty.png');
+				background-size: cover;
+				background-position: top;
+			}
+		</style>
+		<!--end::Page bg image-->
+		<!--begin::Authentication - Sign-in -->
+		<div class="d-flex flex-column flex-lg-row flex-column-fluid">
+			<!--begin::Body-->
+			<div class="d-flex flex-column-fluid flex-lg-row-auto justify-content-center justify-content-lg-end p-12">
+				<!--begin::Wrapper-->
+				<div class="bg-body d-flex flex-center rounded-4 w-md-600px p-10">
+					<!--begin::Content-->
+					<div class="w-md-400px">
+						<!--begin::Form-->
+						<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form"
+							data-kt-redirect-url="../../demo1/dist/index.html" action="#">
+							<!--begin::Heading-->
+							<div class="text-center mb-11">
+								<!--begin::Title-->
+								<h1 class="text-dark fw-bolder mb-3">Sign In</h1>
+								<!--end::Title-->
+							</div>
+							<!--begin::Heading-->
+							<!--begin::Input group=-->
+							<div class="fv-row mb-8">
+								<!--begin::Email-->
+								<input type="text" placeholder="Email" name="email" autocomplete="off"
+									class="form-control bg-transparent" />
+								<!--end::Email-->
+							</div>
+							<!--end::Input group=-->
+							<div class="fv-row mb-3">
+								<!--begin::Password-->
+								<input type="password" placeholder="Password" name="password" autocomplete="off"
+									class="form-control bg-transparent" />
+								<!--end::Password-->
+							</div>
+							<!--end::Input group=-->
+							<!--begin::Wrapper-->
+							<div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
+								<div></div>
+							</div>
+							<!--end::Wrapper-->
+							<!--begin::Submit button-->
+							<div class="d-grid mb-10">
+								<button type="submit" id="kt_sign_in_submit" class="btn btn-primary">
+									<!--begin::Indicator label-->
+									<span class="indicator-label">Sign In</span>
+									<!--end::Indicator label-->
+									<!--begin::Indicator progress-->
+									<span class="indicator-progress">Please wait...
+										<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+									<!--end::Indicator progress-->
+								</button>
+							</div>
+							<!--end::Submit button-->
+						</form>
+						<!--end::Form-->
+					</div>
+					<!--end::Content-->
+				</div>
+				<!--end::Wrapper-->
+			</div>
+			<!--end::Body-->
+			<!--begin::Aside-->
+			<div class="d-flex flex-lg-row-fluid">
+				<!--begin::Content-->
+				<div class="d-flex flex-column flex-center pb-0 pb-lg-10 p-10 w-100">
+					<!--begin::Image-->
+					<img class="theme-light-show mx-auto mw-100 w-150px w-lg-300px mb-10 mb-lg-20"
+						src="/admin/assets/media/logo.png" alt="" />
+					<img class="theme-dark-show mx-auto mw-100 w-150px w-lg-300px mb-10 mb-lg-20"
+						src="/admin/assets/media/logo.png" alt="" />
+					<!--end::Image-->
+					<!--begin::Title-->
+					<div style="background: white; padding: 40px; border-radius: 1rem !important;">
+						<h1 class="text-gray-800 fs-2qx fw-bold text-center mb-7">GIFT'S MINI IMPORTS</h1>
+						<!--end::Title-->
+						<!--begin::Text-->
+						<div class="text-gray-800 fs-base text-center fw-semibold">With
+							<a th:href="@{/}" class="opacity-75-hover text-primary me-1">GMI</a>, every order is a step
+							closer to your dreams. 💼📦✨
+							<br />We don’t just ship goods, we ship confidence, quality, and care. 💪📬❤️
+							<br>Powered by purpose, driven by trust, that’s the
+							<a th:href="@{/}" class="opacity-75-hover text-primary me-1">GMI</a>way. 🔑🌍
+							<br />
+						</div>
+						<!--end::Text-->
+					</div>
+				</div>
+				<!--end::Content-->
+			</div>
+			<!--begin::Aside-->
+
+		</div>
+		<!--end::Authentication - Sign-in-->
+	</div>
+	<!--end::Root-->
+	<!--begin::Javascript-->
+	<script>var hostUrl = "assets/";</script>
+	<!--begin::Global Javascript Bundle(mandatory for all pages)-->
+	<script th:src="@{/admin/assets/plugins/global/plugins.bundle.js}"></script>
+	<script th:src="@{/admin/assets/js/scripts.bundle.js}"></script>
+	<!--end::Global Javascript Bundle-->
+	<!--begin::Custom Javascript(used for this page only)-->
+	<script th:src="@{/admin/assets/js/custom/authentication/sign-in/general.js}"></script>
+	<!--end::Custom Javascript-->
+	<!--end::Javascript-->
+</body>
+<!--end::Body-->
+
+</html>
